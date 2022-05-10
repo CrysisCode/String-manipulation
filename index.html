@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>String manipulation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/node_modules/bootstrap/dist/css/bootstrap.min.css'>
+        <script src='script.js' async defer></script>
+        <script src='/node_modules/@popperjs/core/dist/umd/popper.min.js'></script>
+        <script src='/node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+
+    </head>
+    <body class="text-center">
+        <div class="container text-center">
+        <h1>Cheers!</h1>
+        
+        <button class="btn btn-primary yellowButton" onclick="clickMe(this)">Yellow</button>
+        <button class="btn btn-primary greenButton" onclick="clickMe(this)">Green</button>
+        <button class="btn btn-primary blueButton" onclick="clickMe(this)">Blue</button>
+        <p class="paragraph mt-5 bg-secondary text-light"></p>
+        </div>
+    <div class="container glavni-div mt-5">
+        <span>
+            <a href="#"class="myLink">Link1</a>
+        </span>
+    </div>
+    <div class="container glavni-div">
+        <section>
+            <a href="#" class="myLink">Link2</a>
+        </section>
+    </div>
+    <div class="container glavni-div">
+        <div class="inner-div">
+            <span>
+                <a href="#" class="myLink">Link3</a>
+            </span>
+        </div>
+    </div>
+    <button class="btn btn-success mt-5" onclick="selectLinks()">Upper Links</button>
+    <div class="glavniDiv2 container mt-5">
+        <div class="innerDiv">
+            <div class="double-div">
+                <a href="$" class="links"></a>
+            </div>
+        </div>
+        <a href="#" class="prvi-link">Prvi link</a>
+        <a href="#" class="drugi-link" data-test="testing">Drugi Link</a>
+        <a href="#" class="treci-link">Treci Link</a>
+    </div>
+    <button class="btn btn-danger mt-5" onclick="manipulateLinks()">Lower Links</button>
+    <button class="btn btn-danger mt-5" onclick="testing(this)">innerHTML</button>
+    <div class="mainDiv">
+        <input class="mt-5" type="text" id="email" required>
+        <button class="btn btn-dark" onclick="validation(this)" id="btnValid">Validation</button>
+    </div>    
+</body>
+</html>
